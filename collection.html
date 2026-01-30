@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection | Innovative Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <img src="INNOVATIVE Main Logo Transparent bg.svg" alt="Innovative Furniture" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#collections" class="nav-link">Collections</a>
+                <a href="repairs.html" class="nav-link">Repairs</a>
+                <a href="index.html#about" class="nav-link">Our Craft</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="index.html#collections" class="mobile-link">Collections</a>
+            <a href="repairs.html" class="mobile-link">Repairs</a>
+            <a href="index.html#about" class="mobile-link">Our Craft</a>
+            <a href="index.html#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Collection Hero (populated by JS) -->
+    <section class="collection-hero" id="collectionHero">
+        <div class="collection-hero-inner">
+            <div class="collection-hero-text">
+                <a href="index.html" class="collection-back">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    All Collections
+                </a>
+                <span class="section-number" id="heroNumber"></span>
+                <h1 class="collection-hero-title" id="heroTitle"></h1>
+                <p class="collection-hero-desc" id="heroDesc"></p>
+            </div>
+            <div class="collection-hero-img">
+                <img id="heroImg" src="" alt="" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="section-header">
+            <h2 class="section-title" id="productsTitle">Products</h2>
+            <p class="section-desc" id="productsCount"></p>
+        </div>
+        <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- Other Collections -->
+    <section class="collections-section" id="otherCollections" style="padding-top: 40px;">
+        <div class="section-header">
+            <span class="section-number">More</span>
+            <h2 class="section-title">Explore Other Collections</h2>
+        </div>
+        <div class="collections-grid" id="otherGrid" style="grid-template-columns: repeat(3, 1fr);"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="INNOVATIVE Main Logo Transparent bg.svg" alt="Innovative Furniture" class="footer-logo-img">
+                <span>&copy; 2026 Innovative Furniture. All rights reserved.</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#collections">Collections</a>
+                <a href="repairs.html">Repairs</a>
+                <a href="index.html#about">Our Craft</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="collection-data.js"></script>
+    <script src="main.js"></script>
+    <script src="collection.js"></script>
+</body>
+</html>
