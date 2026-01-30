@@ -41,7 +41,7 @@ if (navToggle && mobileMenu) {
 }
 
 // Scroll reveal
-const revealElements = document.querySelectorAll('.collection-card, .feature, .highlight-item, .contact-card, .product-card');
+const revealElements = document.querySelectorAll('.collection-card, .col-row, .feature, .highlight-item, .contact-card, .product-card, .service-card, .sector-card, .why-card');
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
