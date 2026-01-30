@@ -433,74 +433,14 @@
 
     <!-- Contact / Quote Section -->
     <section id="contact-repair" class="repair-contact">
-        <div class="repair-contact-inner">
-            <div class="repair-contact-left">
-                <span class="section-number" style="color: var(--accent-light);">05</span>
-                <h2 class="about-title" style="color: var(--parchment);">Request a<br><em>Free Quote</em></h2>
-                <p class="about-text" style="margin-top: 20px;">Send us photos of your furniture for a fast, obligation-free quote. We'll get back to you within 24 hours with a clear price and timeline.</p>
-                <div class="repair-contact-info">
-                    <div class="rci-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        <span>Call us for urgent repairs</span>
-                    </div>
-                    <div class="rci-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <span>info@innovativefurniture.co.nz</span>
-                    </div>
-                    <div class="rci-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <span>Auckland, New Zealand</span>
-                    </div>
-                </div>
-            </div>
-            <div class="repair-contact-right">
-                <form class="repair-form" onsubmit="event.preventDefault(); document.querySelector('.form-success').style.display='flex'; this.style.display='none';">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="type">Service Type</label>
-                        <select id="type" name="type">
-                            <option value="">Select a service...</option>
-                            <option>Residential — Sofa / Couch Repair</option>
-                            <option>Residential — Chair / Armchair</option>
-                            <option>Residential — Headboard / Ottoman</option>
-                            <option>Residential — Outdoor Furniture</option>
-                            <option>Residential — Antique Restoration</option>
-                            <option>Commercial — Restaurant / Cafe</option>
-                            <option>Commercial — Office Furniture</option>
-                            <option>Commercial — Hotel / Accommodation</option>
-                            <option>Commercial — Medical / Dental</option>
-                            <option>Automotive / Marine</option>
-                            <option>Other / Custom Request</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Describe Your Repair</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Tell us about the furniture, damage, and what you'd like done. Photos can be emailed separately."></textarea>
-                    </div>
-                    <button type="submit" class="form-submit">
-                        <span>Send Quote Request</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-                    </button>
-                </form>
-                <div class="form-success" style="display:none;">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    <h3>Quote Request Sent</h3>
-                    <p>We'll review your details and get back to you within 24 hours with a clear quote.</p>
-                </div>
-            </div>
+        <div class="repair-contact-inner" style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 680px; margin: 0 auto;">
+            <span class="section-number" style="color: var(--accent-light);">05</span>
+            <h2 class="about-title" style="color: var(--parchment);">Request a<br><em>Free Quote</em></h2>
+            <p class="about-text" style="margin-top: 20px; color: rgba(245,241,235,0.7);">Send us photos of your furniture for a fast, obligation-free quote. We'll get back to you within 24 hours with a clear price and timeline.</p>
+            <a href="mailto:info@innovativefurniture.co.nz" class="repair-email-cta">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>info@innovativefurniture.co.nz</span>
+            </a>
         </div>
     </section>
 
